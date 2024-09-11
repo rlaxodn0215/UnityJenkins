@@ -3194,7 +3194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageScreen: {fileID: 1089070632}
-  maxHP: 100
+  maxHP: 1000
 --- !u!4 &630293565
 Transform:
   m_ObjectHideFlags: 0
