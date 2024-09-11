@@ -1,15 +1,12 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEditor.Build.Reporting;
 
-// Output the build size or a failure depending on BuildPlayer.
-
-public class BuildPlayer : MonoBehaviour
+public class JenkinsBuild : MonoBehaviour
 {
     [MenuItem("Build/StandaloneWindows")]
-    public static void MyBuild_StandaloneWindows()
+    public static void Build_StandaloneWindows()
     {
         BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
         List<string> scenes = new List<string>();
@@ -37,8 +34,8 @@ public class BuildPlayer : MonoBehaviour
         }
     }
 
-    [MenuItem("Build/Build AOS")]
-    public static void MyBuild_AOS()
+    [MenuItem("Build/AOS")]
+    public static void Build_AOS()
     {
         BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
         List<string> scenes = new List<string>();
