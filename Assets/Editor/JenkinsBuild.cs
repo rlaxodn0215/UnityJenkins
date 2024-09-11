@@ -41,12 +41,11 @@ public class JenkinsBuild : MonoBehaviour
         List<string> scenes = new List<string>();
         foreach (var scene in EditorBuildSettings.scenes)
         {
-            if (!scene.enabled) 
-                continue;
+            if (!scene.enabled) continue;
             scenes.Add(scene.path);
         }
         buildPlayerOptions.scenes = scenes.ToArray();
-        buildPlayerOptions.locationPathName = $"Builds/AOS_{PlayerSettings.bundleVersion}.apk";
+        buildPlayerOptions.locationPathName = "Builds/UnityJenkins.apk";
         buildPlayerOptions.target = BuildTarget.Android;
         buildPlayerOptions.options = BuildOptions.None;
 
