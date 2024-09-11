@@ -3,6 +3,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEditor.Build.Reporting;
 
+// JenkinsBuild¸¦ À§ÇÑ Script
 public class JenkinsBuild : MonoBehaviour
 {
     [MenuItem("Build/StandaloneWindows")]
